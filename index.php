@@ -1,5 +1,6 @@
 <?php
   include_once 'includes/header.php';
+  require 'includes/database.php';
  ?>
 <br>
 <br>
@@ -12,8 +13,10 @@ THIS IS MY HOME PAGE
 <br>
 <br>
 <br>
+<?php
 
 
+?>
 
 
  <?php
