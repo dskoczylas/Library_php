@@ -19,7 +19,10 @@
                 $passCheck = password_verify($password,$row['password']);
 
                 if ($passCheck === true){
-                  header("Location: ../login.php?error=goodpassword");
+                  session_start();
+                  $_SESSION['Username'] = $row['username'];
+
+                  header("Location: ../index.php");
                   exit();
                 }else{
                   header("Location: ../login.php?error=wrongpassword");

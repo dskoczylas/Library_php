@@ -27,7 +27,8 @@
                     $sql = "INSERT INTO users (username,password) VALUES (?,?);";
                     $stmt = mysqli_stmt_init($conn);
                     mysqli_stmt_prepare($stmt,$sql);
-                    mysqli_stmt_bind_param($stmt,"ss",$username,$password);
+                    $passHash = password_hash($password, PASSWORD_DEFAULT);
+                    mysqli_stmt_bind_param($stmt,"ss",$username,$passHash);
                     mysqli_execute($stmt);
                     header("Location: ../signup.php?succes=registered");
                     exit();
