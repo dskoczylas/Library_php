@@ -1,19 +1,21 @@
 <?php
-  include_once 'includes/header.php';
-  require 'includes/database.php';
- ?>
-<br>
-<br>
-<br>
-<br>
+  session_start();
+  if(isset($_SESSION['Username'])){
+    require_once 'includes/header-logged-inc.php';
+  }else{
+    require_once 'includes/header.php';
+  }
 
-THIS IS MY HOME PAGE
-<br>
-<br>
-<br>
-<br>
-<br>
+
+  require_once 'includes/database.php';
+ ?>
 <?php
+
+  if(isset($_SESSION['Username'])){
+    echo "WELCOME ". $_SESSION['Username'];
+  }else{
+    echo "WELCOME LIBRARY SYSTEM - PLEASE LOGIN IN OR CREATE AN ACCOUNT!";
+  }
 
 
 ?>
