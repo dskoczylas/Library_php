@@ -21,6 +21,8 @@
                 if ($passCheck === true){
                   session_start();
                   $_SESSION['Username'] = $row['username'];
+                  $_SESSION['Status'] = $row['status'];
+
 
                   header("Location: ../index.php");
                   exit();

@@ -5,3 +5,9 @@
 ?>
     <p>You are logged out!</p>
     <p>Back to home?</p><a href="index.php">CLICK HERE</a>
+
+
+
+    <?php
+        require_once 'includes/footer.php';
+     ?>

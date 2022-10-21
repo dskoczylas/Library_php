@@ -12,7 +12,7 @@
 <?php
 
   if(isset($_SESSION['Username'])){
-    echo "WELCOME ". $_SESSION['Username'];
+    echo "WELCOME ". $_SESSION['Username'] . "and you are ". $_SESSION['Status'];
   }else{
     echo "WELCOME LIBRARY SYSTEM - PLEASE LOGIN IN OR CREATE AN ACCOUNT!";
   }
