@@ -21,11 +21,18 @@
 
 
  <form class="col-lg-6 offset-lg-3" action="includes/login-inc.php" method="post">
+<div class="container">
+<div class="card">
+  <div class="card-header">
+    <h3>LOG IN</h3>
+  </div>
    <div class="form-group">
     LOGIN: <input type="text" name="user"><br>
     PASSWORD: <input type="password" name="password"><br>
     <button type="submit" name="sub">LOG IN</button>
   </div>
+</div>
+</div>
 </form>
 
 

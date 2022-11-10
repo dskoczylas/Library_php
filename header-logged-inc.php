@@ -10,19 +10,11 @@
   <title>Library</title>
 </head>
 <body>
-  <ul>
-
-    <?php
-    #if($_SESSION['Status'] == 'admin'){
-      echo '<li><a href="users-logged.php">USERS</a></li>';
-      echo '<li><a href="books.php">BOOKS</a></li>';
-      echo '<li><a href="logout.php">LOGOUT</a></li>';
-    #}elseif($_SESSION['Status'] == 'user'){
-    #  echo '<li><a href="logout.php">LOGOUT</a></li>';
-    #}
-      ?>
-
-
-
+<nav>
+  <ul class="navbar-nav">
+    <li class="nav-item"><a class="nav-link " href="users-logged.php">USERS</a></li>
+    <li class="nav-item"><a class="nav-link " href="books.php">BOOKS</a></li>
+    <li class="nav-item"><a class="nav-link " href="logout.php">LOGOUT</a></li>
   </ul>
+</nav>
   <hr>
