@@ -10,11 +10,9 @@
   <title>Library</title>
 </head>
 <body>
-<nav>
-  <ul class="navbar-nav">
-    <li class="nav-item"><a class="nav-link " href="users-logged.php">USERS</a></li>
-    <li class="nav-item"><a class="nav-link " href="books.php">BOOKS</a></li>
-    <li class="nav-item"><a class="nav-link " href="logout.php">LOGOUT</a></li>
+
+  <ul class="nav nav-tabs">
+    <li class="nav-item"><a class="nav-link" href="users-logged.php">USERS</a></li>
+    <li class="nav-item"><a class="nav-link" href="books.php">BOOKS</a></li>
+    <li class="nav-item"><a class="nav-link" href="logout.php">LOGOUT</a></li>
   </ul>
-</nav>
-  <hr>

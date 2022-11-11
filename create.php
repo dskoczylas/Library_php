@@ -20,5 +20,6 @@ integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI
     <input type="password" name="repeat_psw">
   </div>
     <button type="submit" class="btn btn-success">CREATE USER</button>
+    <a href="users-logged.php" class="btn btn-secondary">BACK</a>
 </div>
 </form>

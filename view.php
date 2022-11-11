@@ -4,6 +4,7 @@
 ?>
 <?php
 
+
     $id = $_GET['userid'];
     $sql = "SELECT * FROM `users` WHERE `id` = ?;";
     $stmt = mysqli_stmt_init($conn);
@@ -12,6 +13,8 @@
     mysqli_stmt_execute($stmt);
     $result = mysqli_stmt_get_result($stmt);
     $row = mysqli_fetch_array($result);
+
+
 ?>
 
   <div class="container">

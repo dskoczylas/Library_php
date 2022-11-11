@@ -9,11 +9,9 @@
   <title>Library</title>
 </head>
 <body>
-<div class="container">
-  <ul class="list-group">
-    <li><a href="index.php">HOME</a></li>
-    <li><a href="login.php">LOGIN</a></li>
-    <li><a href="signup.php">SIGN UP</a></li>
+
+  <ul class="nav nav-tabs">
+    <li class="nav-item"><a class="nav-link" href="index.php">HOME</a></li>
+    <li class="nav-item"><a class="nav-link" href="login.php">LOGIN</a></li>
+    <li class="nav-item"><a class="nav-link" href="signup.php">SIGN UP</a></li>
   </ul>
-</div>
-  <hr>
